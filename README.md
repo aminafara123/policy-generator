@@ -35,6 +35,17 @@ flowchart LR
     I --> J
 ```
 
+## Install
+
+```bash
+# install as a command-line tool (recommended)
+pipx install git+https://github.com/aminafara123/policy-generator
+policy-generator --list
+policy-generator --profile profile.example.yaml --out output
+```
+
+Or install into the current environment from a clone with `pip install .`. The `make` targets below still work for local development.
+
 ## Quickstart
 
 ```bash
