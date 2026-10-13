@@ -1,0 +1,35 @@
+# Company profile for policy-generator.
+# Copy this file, edit the values, and pass it with --profile.
+company:
+  name: "Northwind Health Labs"
+  industry: "B2B SaaS / health-tech"
+  size: "85 employees"
+  cloud_providers:
+    - "AWS (eu-west-1, eu-central-1)"
+    - "Cloudflare"
+    - "Google Workspace"
+  data_types:
+    - "Customer PII"
+    - "Protected Health Information (PHI)"
+    - "Payment card data (via a PCI-compliant processor)"
+    - "Source code and business financials"
+  frameworks:
+    - "ISO/IEC 27001:2022"
+    - "SOC 2 Type II"
+  security_contact: "the Security team (security@northwind.example)"
+  policy_owner: "Chief Information Security Officer (CISO)"
+  approver: "Chief Executive Officer (CEO)"
+
+# Document metadata (optional — sensible defaults are used if omitted).
+version: "0.1 (Draft)"
+
+# Which policies to generate. Omit, or set to leave empty, to generate all.
+# Valid keys: information-security-policy, access-control, acceptable-use,
+#   data-classification, incident-response, business-continuity,
+#   vendor-risk, change-management
+policies:
+  - information-security-policy
+  - access-control
+  - data-classification
+  - incident-response
+  - vendor-risk
